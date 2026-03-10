@@ -7,7 +7,7 @@ int main() {
     FILE *fp_in = fopen("network.log", "r");  // Pretend this is a network log
     FILE *fp_out = fopen("collected_network.log", "w");
 
-    if (!fp_in || !fp_out) {
+    if (!fp_in || !fp_out) { // Conditions to check if files opened successfully
         perror("File error");
         return 1;
     }
